@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becas y Ayudas Económicas</title>
+    <link rel="stylesheet" href="../css/InicioSesion.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/png">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="cubrir"></div>
+        <h1>Becas y Ayudas Económicas</h1>
+    </header>
+
+    <div class="logo-contenedor">
+        <img src="../images/logoUleam.png" alt="Logo Uleam" class="logo">
+    </div>
+
+    <main class="cuerpo-inicio-sesion">
+        <form>
+            <div class="formulario">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required/>
+            </div>
+            
+            <div class="formulario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required/>
+            </div>
+            
+            <div class="botton">
+                <button type="submit">Ingresar</button> 
+            </div>
+            
+            <div id="mensaje" style="color: red;"></div>
+            
+            <p class="recuperar-contraseña">
+                <a href="./RecuperarContraseña.html">¿Olvidaste tu contraseña?</a>
+            </p>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div class="creado">
+            <p>
+                <a href="https://github.com/AnThony69x" target="_blank" class="enlace">
+                    Hecho por Anthony Mejia
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/InicioSesion.js"></script>
+</body>
+</html>

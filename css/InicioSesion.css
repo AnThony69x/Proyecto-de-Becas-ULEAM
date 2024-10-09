@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado {
+    position: relative;
+    background-image: url('../images/encabezadoUleam.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cubrir {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.encabezado h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.logo-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0; 
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.cuerpo-inicio-sesion {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.recuperar-contraseña {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.recuperar-contraseña a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.recuperar-contraseña a:hover {
+    text-decoration: underline;
+}
+
+.rol {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 30px; 
+}
+
+footer .creado p {
+    margin: 0;
+}
+
+footer .enlace {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .enlace:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

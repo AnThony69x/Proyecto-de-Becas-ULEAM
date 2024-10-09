@@ -1,0 +1,27 @@
+[
+    {
+        "usuario": "admin",
+        "contraseña": "admin",
+        "rol": "admin"
+    },
+    {
+        "usuario": "Anthony",
+        "contraseña": "12345",  
+        "rol": "estudiante"
+    },
+    {
+        "usuario": "Monica",
+        "contraseña": "67890",
+        "rol": "estudiante"
+    },
+    {
+        "usuario": "e0706254372@live.uleam.edu.ec",
+        "contraseña": "Pepe0706254372",
+        "rol": "estudiante"
+    },
+    {
+        "usuario": "e0803437755@live.uleam.edu.ec",
+        "contraseña": "Antho0803437755",
+        "rol": "admin"
+    }
+]

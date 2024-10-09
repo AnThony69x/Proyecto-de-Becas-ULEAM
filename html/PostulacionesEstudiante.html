@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becas y Ayudas Económicas</title>
+    <link rel="stylesheet" href="../css/PostulacionesEstudiante.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/png">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="cubrir"></div>
+        <h1>Becas y Ayudas Económicas</h1>
+    </header>
+
+    <div class="logo-contenedor">
+        <img src="../images/logoUleam.png" alt="Logo Uleam" class="logo">
+    </div>
+
+    <div class="boton-cerrar-sesion">
+        <a href="./InicioSesion.html"><button type="button">Cerrar Sesión</button></a>
+    </div>
+
+    <main class="cuerpo-postulaciones-estudiante">
+        <div class="menu">
+            <p>Formulario de Postulación</p>
+            <div class="formulario">
+                <form id="postulacion-form">
+                    <label for="periodo">Periodo*:</label>
+                    <select id="periodo" name="periodo" required>
+                        <option value="">Seleccione...</option>
+                        <option value="2024-1">2024-1</option>
+                        <option value="2024-2">2024-2</option>
+                    </select>
+
+                    <label for="beca">Beca o Ayuda Económica*:</label>
+                    <select id="beca" name="beca" required>
+                        <option value="">Seleccione...</option>
+                        <option value="beca-socio-economica">Becas por situación socioeconómica</option>
+                        <option value="beca-discapacidad">Becas para estudiantes con discapacidad</option>
+                        <option value="beca-alto-rendimiento">Becas por alto rendimiento académico</option>
+                        <option value="ayuda-afirmativas">Ayuda por acciones afirmativas</option>
+                        <option value="ayuda-posgrado">Ayuda para movilidad académica (Posgrado)</option>
+                        <option value="ayuda-seminarios">Ayuda para asistir a seminarios y/o cursos de capacitación nacionales e internacionales</option>
+                    </select>
+
+                    <label for="fecha-elaboracion">Fecha de Elaboración*:</label>
+                    <input type="date" id="fecha-elaboracion" name="fecha-elaboracion" required>
+
+                    <label for="nombre">Nombres*:</label>
+                    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios">
+
+                    <label for="apellido">Apellidos*:</label>
+                    <input type="text" id="apellido" name="apellido" required pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios">
+
+                    <label for="colegio-graduado">Colegio del cual se graduó*:</label>
+                    <input type="text" id="colegio-graduado" name="colegio-graduado" required pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios">
+
+                    <label for="nota-grado">Nota de Grado*:</label>
+                    <input type="number" id="nota-grado" name="nota-grado" required min="0" max="20" title="Ingrese un valor entre 0 y 20">
+
+                    <label for="nota-disciplina">Nota de Disciplina*:</label>
+                    <input type="number" id="nota-disciplina" name="nota-disciplina" required min="0" max="20" title="Ingrese un valor entre 0 y 20">
+
+                    <label for="promedio-dos-periodo-anteriores">Promedio de los dos periodos anteriores*:</label>
+                    <input type="number" id="promedio-dos-periodo-anteriores" name="promedio-dos-periodo-anteriores" required min="0" max="20" title="Ingrese un valor entre 0 y 20">
+
+                    <label for="postulacion-a-beca">¿Ha postulado anteriormente a alguna beca?*</label>
+                    <select id="postulacion-a-beca" name="postulacion-a-beca" required>
+                        <option value="">Seleccione...</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <div id="tipo-becas-container" style="display: none;">
+                        <label for="tipo-becas-tenido">¿Qué tipo de becas ha tenido anteriormente?*</label>
+                        <input type="text" id="tipo-becas-tenido" name="tipo-becas-tenido">
+                    </div>
+
+                    <label for="porque-postulo-beca">¿Por qué está postulando a la Beca?*</label>
+                    <textarea id="porque-postulo-beca" name="porque-postulo-beca" required></textarea>
+
+                    <button type="submit">Enviar Postulación</button>
+                    <button type="reset">Borrar todo</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="creado">
+            <p>
+                <a href="https://github.com/AnThony69x" target="_blank" class="enlace">
+                    Hecho por Anthony Mejia
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../js/PostulacionesEstudiantes.js"></script>
+
+</body>
+</html>
